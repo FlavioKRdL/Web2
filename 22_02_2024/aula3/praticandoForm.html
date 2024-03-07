@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-abs{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+        .div-parent1{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content:space-between;
+            
+
+            width: 40vw;
+            height: 50vh;
+            margin-right: 10px;
+        }
+        .div-parent2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            
+
+            width: 40vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="https://localhost/aula3/destino-form.php" method="post">
+
+        <div class="div-abs">
+            <div class="div-parent1">
+                <label for="titulo">Título:</label>
+                <label for="corpo">Corpo: </label>
+                <label for="corTexto">Cor do texto:</label>
+                <label for="imagem">URL da imagem:</label>
+                <label for="link">URL do link:</label>
+                <label for="corFundo">Cor de fundo:</label>
+                <input type="submit" value="Enviar">
+            </div>
+
+            <div class="div-parent2">
+                <input type="text" name="titulo" id="titulo">
+                
+                <textarea name="corpo" id="corpo" cols="40" rows="2"></textarea>
+                
+                <input type="color" name="corTexto" id="corTexto">
+                
+                <input type="url" name="imagem" id="imagem">
+                
+                <input type="url" name="link" id="link">
+                
+                <input type="color" name="corFundo" id="corFundo">
+                <input type="reset" value="Limpar">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

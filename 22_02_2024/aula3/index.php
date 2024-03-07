@@ -15,6 +15,9 @@
         echo("<br>");
         echo("<a href='https://localhost/2024/eder'>2024/eder</a>");
     ?>
+    <br><br>
+
+    <a href="praticandoForm.html">Formulário Praticando</a>
     
 
 </body>
