@@ -50,6 +50,7 @@
     <style>
         .p1{
             color: <?php echo($cor); ?>;
+            font:bold;
         }
     </style>
 
